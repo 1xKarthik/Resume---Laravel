@@ -1,0 +1,151 @@
+// Fonts
+//@import url('https://fonts.googleapis.com/css?family=Nunito');
+// Variables
+@import 'variables';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.navbar {
+    border-bottom: 1px solid #000;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*="col-"] {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+* {
+    transition-property: background-color;
+    transition-duration: 0.20s;
+    transition-timing-function: linear;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.2em;
+    background: #f3f3f3 url(../img/patterns/snow.png) fixed 0 0;
+    //color: #444;
+    height: 100%;
+    width: auto;
+}
+
+#wrapper {
+    width: 100%;
+    position: relative;
+    max-width: 800px;
+    margin: 60px auto 30px;
+    padding: 60px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+
+    /* Titles */
+    #titleName {
+        margin: 20px -60px 10px;
+    }
+
+    .sectionHead {
+        margin: 40px -45px;
+        clear: both;
+        position: relative;
+        font: 700 20px/12px verdana, sans-serif;
+        //font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-left: 50px solid #444;
+        padding: 1px 0 0 10px;
+    }
+
+    #course {
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+
+    #intro {
+        //margin: 40px auto;
+    }
+
+    .socialIcons {
+        float: right;
+        margin: 10px 0;
+        .socialIcon {
+            display: inline-block;
+            background-image: url(../img/social.png);
+            width: 30px;
+            height: 30px;
+            margin: 0 0 0 3px;
+            background-position: -210px 0;
+        }
+    }
+
+    #intro {
+        position: relative;
+        padding-left: 15px;
+        line-height: 2em;
+        margin: 40px auto 0;
+    }
+
+    .schools, .jobs {
+        padding-left: 15px;
+        margin-bottom: 10px;
+        .details {
+            h3 {
+                font-weight: 700;
+                font-size: 15px;
+            }
+            h4 {
+                font-size: 14px;
+            }
+            h5 {
+                font-style: italic;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+
+    }
+
+    #projects {
+        .pBox {
+            padding-left: 15px;
+            .pTitle {
+                font-weight: 700;
+                font-size: 15px;
+            }
+            .pLink {
+                margin-left: 10px;
+                padding: 0 15px;
+            }
+            .description {
+                list-style: none;
+                padding-left: 0;
+                margin-bottom: 10px;
+                margin-top: 5px;
+            }
+            .desc {
+                margin-bottom: 5px;
+                .sub {
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+            }
+            span {
+                line-height: 1.5;
+            }
+        }
+    }
+
+    #relEx {
+        line-height: 2em;
+        padding-left: 15px;
+    }
+}
+
+
+
+
