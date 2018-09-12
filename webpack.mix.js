@@ -1,8 +1,8 @@
 const mix = require('laravel-mix');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
-mix.js('resources/js/app.js', 'public/js')
-    .extract(['lodash', 'popper.js', 'jquery', 'bootstrap', 'axios', 'vue']);
+mix.js('resources/js/app.js', 'public/js');
+    // .extract(['lodash', 'popper.js', 'jquery', 'bootstrap', 'axios', 'vue']);
 mix.sass('resources/sass/app.scss', 'public/css')
     .options({
         processCssUrls: false

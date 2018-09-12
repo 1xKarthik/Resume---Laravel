@@ -1,9 +1,13 @@
-require('./bootstrap');
+// require('./bootstrap');
 
-window.Vue = require('vue');
+// window.Vue = require('vue');
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+window.$ = window.jQuery = require('jquery');
 
-const app = new Vue({
-    el: '#app'
+$('ul#skills').addClass('ready');
+$('ul#skills li').each(function () {
+    let i = $(this).index();
+    $(this).delay(100 * i).animate({right: "0%"}, 1000, function () {
+        $(this).children('span').fadeIn(600);
+    });
 });
