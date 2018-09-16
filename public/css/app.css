@@ -9513,7 +9513,7 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: sans-serif;
   line-height: 1.2em;
-  background: #f3f3f3 url(../img/patterns/soft_wallpaper.png) fixed 0 0;
+  background: #f3f3f3 url(../img/patterns/wallpaper.png) fixed 0 0;
   height: 100%;
   width: auto;
 }
